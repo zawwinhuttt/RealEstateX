@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { Platform } from "react-native";
 
 import { ErrorBoundary } from "./error-boundary";
+import { FavoritesProvider } from "@/context/FavoritesContext"; // Import the provider
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
@@ -39,7 +40,10 @@ export default function RootLayout() {
 
   return (
     <ErrorBoundary>
-      <RootLayoutNav />
+      {/* Wrap the main navigation with the FavoritesProvider */}
+      <FavoritesProvider>
+        <RootLayoutNav />
+      </FavoritesProvider>
     </ErrorBoundary>
   );
 }

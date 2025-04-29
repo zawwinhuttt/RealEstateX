@@ -2,8 +2,19 @@ import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native';
 import { Image } from 'expo-image';
 import { Plus, Heart } from 'lucide-react-native';
 import { listings } from '@/mocks/listings';
+import { useFavorites } from '@/context/FavoritesContext'; // Import the hook
 
 export default function WishlistsScreen() {
+  const { favoriteListingIds } = useFavorites(); // Get favorite IDs from context
+
+  // Filter listings based on favorite IDs
+  const favoritedListings = listings.filter(listing =>
+    favoriteListingIds.includes(listing.id)
+  );
+
+  // Determine if the empty state should be shown
+  const showEmptyState = favoritedListings.length === 0;
+
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
@@ -19,40 +30,40 @@ export default function WishlistsScreen() {
         <View style={styles.wishlistHeader}>
           <View>
             <Text style={styles.wishlistName}>Favorites</Text>
-            <Text style={styles.wishlistCount}>{listings.length} saves</Text>
+            {/* Display the count of favorited listings */}
+            <Text style={styles.wishlistCount}>{favoritedListings.length} saves</Text>
           </View>
           <Heart size={24} fill="#FF5A5F" color="#FF5A5F" />
         </View>
 
-        <ScrollView 
-          horizontal 
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.wishlistItems}
-        >
-          {listings.map((listing) => (
-            <Pressable key={listing.id} style={styles.wishlistItem}>
+        {/* Display favorited listings vertically */}
+        <View style={styles.verticalWishlistItems}> {/* New style for vertical layout */}
+          {favoritedListings.map((listing) => (
+            <Pressable key={listing.id} style={styles.verticalWishlistItem}> {/* New style for vertical item */}
               <Image
                 source={listing.images[0]}
-                style={styles.wishlistItemImage}
+                style={styles.verticalWishlistItemImage}
                 contentFit="cover"
               />
-              <View style={styles.wishlistItemOverlay}>
-                <Text style={styles.wishlistItemPrice}>
+              <View style={styles.wishlistItemOverlay}> {/* Keep overlay style */}
+                <Text style={styles.wishlistItemPrice}> {/* Keep price style */}
                   ${listing.price}
                 </Text>
               </View>
             </Pressable>
           ))}
-        </ScrollView>
+        </View>
       </View>
 
-      {/* Empty State */}
-      <View style={styles.emptyState}>
-        <Text style={styles.emptyStateTitle}>Create your first wishlist</Text>
-        <Text style={styles.emptyStateText}>
+      {/* Empty State - Conditionally render */}
+      {showEmptyState && (
+        <View style={styles.emptyState}>
+          <Text style={styles.emptyStateTitle}>Create your first wishlist</Text>
+          <Text style={styles.emptyStateText}>
           As you search, tap the heart icon to save your favorite places and Experiences to a wishlist.
         </Text>
-      </View>
+        </View>
+      )}
     </ScrollView>
   );
 }
@@ -107,17 +118,35 @@ const styles = StyleSheet.create({
     color: '#666',
     marginTop: 4,
   },
-  wishlistItems: {
-    gap: 12,
+  // Remove horizontal styles
+  // wishlistItems: {
+  //   gap: 12,
+  // },
+  // wishlistItem: {
+  //   position: 'relative',
+  //   width: 200,
+  //   height: 150,
+  //   borderRadius: 12,
+  //   overflow: 'hidden',
+  // },
+  // wishlistItemImage: {
+  //   width: '100%',
+  //   height: '100%',
+  // },
+
+  // New styles for vertical layout
+  verticalWishlistItems: {
+    // No specific styles needed here unless you want padding/margin around the grid
   },
-  wishlistItem: {
+  verticalWishlistItem: {
     position: 'relative',
-    width: 200,
-    height: 150,
+    width: '100%', // Take full width
+    height: 250, // Adjust height as needed
     borderRadius: 12,
     overflow: 'hidden',
+    marginBottom: 16, // Add vertical spacing between items
   },
-  wishlistItemImage: {
+  verticalWishlistItemImage: {
     width: '100%',
     height: '100%',
   },

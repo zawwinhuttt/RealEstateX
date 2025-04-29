@@ -22,7 +22,7 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "app.rork.homeshare-listing-platform"
+      "package": "com.wizard560.homesharelistingplatform"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
@@ -37,6 +37,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://rork.app/"
+      },
+      "eas": {
+        "projectId": "9e64ff36-5ada-4233-83c1-80d0f900c139"
+      }
     }
   }
 }
