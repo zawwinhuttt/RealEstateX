@@ -8,6 +8,7 @@ export const listings: Listing[] = [
     location: 'Downtown, New York',
     images: [
       'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267',
+      
     ],
     price: 250,
     currency: 'USD',
@@ -72,7 +73,7 @@ export const listings: Listing[] = [
     title: 'Rustic Farmhouse Retreat',
     location: 'Chianti, Tuscany',
     images: [
-      'https://images.unsplash.com/photo-1502005229762-cf1b2da7ef5d',
+      'https://img.freepik.com/free-photo/simple-home-working-concept-with-laptop-bed_23-2148304945.jpg?t=st=1746006024~exp=1746009624~hmac=8e9d639924f2e50d6c767280057b17856af0aa183802549e5b893313188cc1df&w=826',
     ],
     price: 300,
     currency: 'EUR',
@@ -153,7 +154,7 @@ export const listings: Listing[] = [
     title: 'Penthouse with Rooftop Pool',
     location: 'Los Angeles, California',
     images: [
-      'https://images.unsplash.com/photo-1598896648254-61861957a41a', // Pool view
+      'https://img.freepik.com/free-photo/tea-book-relax_23-2148832372.jpg?t=st=1746006155~exp=1746009755~hmac=4f005be7f7b4878340ff2f1d07a24d11fabd24a99858b8de686f1d75c6c6cc48&w=2000', // Pool view
     ],
     price: 600,
     currency: 'USD',
@@ -185,7 +186,7 @@ export const listings: Listing[] = [
     title: 'Desert Oasis near National Park',
     location: 'Joshua Tree, California',
     images: [
-      'https://images.unsplash.com/photo-1516575731171-76341991334c', // Exterior desert house
+      'https://img.freepik.com/free-photo/beautiful-interior-room-design-concept_23-2148786400.jpg?t=st=1746006229~exp=1746009829~hmac=093ec25bdc2eaafa777cc202bb1118318e642b990c77ebec72422a6ebf3090da&w=2000', // Exterior desert house
     ],
     price: 290,
     currency: 'USD',
@@ -201,7 +202,7 @@ export const listings: Listing[] = [
     title: 'Canal House Apartment',
     location: 'Amsterdam, Netherlands',
     images: [
-      'https://images.unsplash.com/photo-1517736996303-4eec4a665155', // Canal view
+      'https://img.freepik.com/free-photo/bedroom-with-ocean-view_1268-36011.jpg?t=st=1746006323~exp=1746009923~hmac=09bfba3c69df5b0fce0fe379435bf1288417adcf6705c26699e59911ae86d1de&w=2000', // Canal view
     ],
     price: 190,
     currency: 'EUR',
@@ -217,7 +218,7 @@ export const listings: Listing[] = [
     title: 'Ski-in/Ski-out Chalet',
     location: 'Whistler, British Columbia',
     images: [
-      'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2', // Exterior snow chalet
+      'https://img.freepik.com/free-photo/luxury-poolside-experience-where-guests-bask-opulence-cabanas_1268-31113.jpg?t=st=1746005906~exp=1746009506~hmac=dcce3ca8d30c154106c928df3a0f2e7fe9137e8aa97a90f912c7efab5881e867&w=2000', // Exterior snow chalet
     ],
     price: 550,
     currency: 'CAD',
@@ -265,7 +266,7 @@ export const listings: Listing[] = [
     title: 'Quirky Airstream Adventure',
     location: 'Marfa, Texas',
     images: [
-      'https://images.unsplash.com/photo-1517849845537-4d257902454a', // Airstream exterior
+      'https://img.freepik.com/free-photo/modern-apartment-architecture_1268-14696.jpg?t=st=1746006387~exp=1746009987~hmac=799bb2ad55f3a57fae1bdf36e60546e398121699fd293d1e8b6ff96b4abae3e5&w=2000', // Airstream exterior
     ],
     price: 130,
     currency: 'USD',
@@ -281,7 +282,7 @@ export const listings: Listing[] = [
     title: 'Luxury Safari Tent',
     location: 'Serengeti, Tanzania',
     images: [
-      'https://images.unsplash.com/photo-1523978591478-c7b62a743活', // Tent exterior safari
+      'https://img.freepik.com/free-photo/extravagant-pool-party-luxurious-mansion-complete-with-vip-cabanas-dj-booth_1268-31075.jpg?t=st=1746006462~exp=1746010062~hmac=b7b464d874b4d3e03e4a08d038a17aa55319a94f865627fcaae72c77eab709db&w=2000', // Tent exterior safari
     ],
     price: 700,
     currency: 'USD',
@@ -292,165 +293,6 @@ export const listings: Listing[] = [
     baths: 1,
     superhost: true,
   },
-   {
-    id: '19',
-    title: 'Downtown High-Rise Apartment',
-    location: 'Chicago, Illinois',
-    images: [
-      'https://images.unsplash.com/photo-1559708945-515801a493ea', // City skyline Chicago
-    ],
-    price: 210,
-    currency: 'USD',
-    rating: 4.6,
-    reviewCount: 115,
-    type: 'Entire apartment',
-    beds: 1,
-    baths: 1,
-    superhost: false,
-  },
-  {
-    id: '20',
-    title: 'Vineyard Guest House',
-    location: 'Napa Valley, California',
-    images: [
-      'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb', // Vineyard landscape
-    ],
-    price: 380,
-    currency: 'USD',
-    rating: 4.88,
-    reviewCount: 160,
-    type: 'Entire guesthouse',
-    beds: 2,
-    baths: 2,
-    superhost: true,
-  },
-  {
-    id: '21',
-    title: 'Cozy Room near University',
-    location: 'Cambridge, Massachusetts',
-    images: [
-      'https://images.unsplash.com/photo-1541339907198-e08756dedf3f', // University building
-    ],
-    price: 95,
-    currency: 'USD',
-    rating: 4.4,
-    reviewCount: 60,
-    type: 'Private room',
-    beds: 1,
-    baths: 1, // Shared
-    superhost: false,
-  },
-  {
-    id: '22',
-    title: 'Remote Icelandic Cabin',
-    location: 'Near Vik, Iceland',
-    images: [
-      'https://images.unsplash.com/photo-1504829857131-a170755d1a5f', // Cabin exterior Iceland landscape
-    ],
-    price: 250,
-    currency: 'EUR', // Often priced in EUR
-    rating: 4.9,
-    reviewCount: 100,
-    type: 'Entire cabin',
-    beds: 2,
-    baths: 1,
-    superhost: true,
-  },
-  {
-    id: '23',
-    title: 'Rooftop Apartment with Acropolis View',
-    location: 'Athens, Greece',
-    images: [
-      'https://images.unsplash.com/photo-1580579048598-b65f15785f9a', // Acropolis view
-    ],
-    price: 170,
-    currency: 'EUR',
-    rating: 4.8,
-    reviewCount: 175,
-    type: 'Entire apartment',
-    beds: 1,
-    baths: 1,
-    superhost: true,
-  },
-  {
-    id: '24',
-    title: 'Family Home in Suburbia',
-    location: 'Austin, Texas',
-    images: [
-      'https://images.unsplash.com/photo-1570129477492-45c003edd2be', // Suburban house exterior
-    ],
-    price: 220,
-    currency: 'USD',
-    rating: 4.55,
-    reviewCount: 90,
-    type: 'Entire house',
-    beds: 4,
-    baths: 2.5, // Common notation for 2 full, 1 half bath
-    superhost: false,
-  },
-  {
-    id: '25',
-    title: 'Eco-Friendly Treehouse',
-    location: 'Costa Rica Rainforest',
-    images: [
-      'https://images.unsplash.com/photo-1501870190084-cdf29f15ef87', // Treehouse exterior jungle
-    ],
-    price: 190,
-    currency: 'USD',
-    rating: 4.92,
-    reviewCount: 145,
-    type: 'Treehouse',
-    beds: 1,
-    baths: 1,
-    superhost: true,
-  },
-  {
-    id: '26',
-    title: 'Shared Hostel Dorm Bed',
-    location: 'Lisbon, Portugal',
-    images: [
-      'https://images.unsplash.com/photo-1540518614846-7eded433c457', // Bunk beds / Dorm room
-    ],
-    price: 30,
-    currency: 'EUR',
-    rating: 4.2,
-    reviewCount: 350,
-    type: 'Shared room',
-    beds: 1, // Per bed
-    baths: 4, // Shared baths
-    superhost: false,
-  },
-  {
-    id: '27',
-    title: 'Grand Castle Stay',
-    location: 'Scottish Highlands',
-    images: [
-      'https://images.unsplash.com/photo-1576796996933-a9b5c0e07f32', // Castle exterior Scotland
-    ],
-    price: 800,
-    currency: 'GBP',
-    rating: 4.95,
-    reviewCount: 65,
-    type: 'Private room in castle', // Or 'Entire castle' if applicable
-    beds: 1, // Per room usually
-    baths: 1, // En-suite likely
-    superhost: true,
-  },
-  {
-    id: '28',
-    title: 'Simple Room for Commuters',
-    location: 'Near SFO Airport, California',
-    images: [
-      'https://images.unsplash.com/photo-1560185007-c5ca9d2c014d', // Basic bedroom
-    ],
-    price: 85,
-    currency: 'USD',
-    rating: 4.3,
-    reviewCount: 105,
-    type: 'Private room',
-    beds: 1,
-    baths: 1, // Shared
-    superhost: false,
-  },
+   
   // --- New 20 Listings End Here ---
 ];

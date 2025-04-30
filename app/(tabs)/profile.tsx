@@ -31,8 +31,8 @@ const SECTIONS = [
 ];
 
 export default function ProfileScreen() {
-  const [username, setUsername] = useState('John Doe'); // State for username
-  const [profilePictureUri, setProfilePictureUri] = useState('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'); // State for profile picture URI
+  const [username, setUsername] = useState('Username016'); // State for username
+  const [profilePictureUri, setProfilePictureUri] = useState('https://img.freepik.com/premium-psd/3d-illustration-business-man-with-glasses_23-2149436193.jpg?w=1380'); // State for profile picture URI
   const [isEditingUsername, setIsEditingUsername] = useState(false); // State to toggle username editing
 
   const handleChooseProfilePicture = async () => {

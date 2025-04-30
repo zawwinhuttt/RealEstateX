@@ -20,6 +20,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Explore',
+          headerShown: false, // Hide header for Explore screen
           tabBarIcon: ({ color }) => <Home size={24} color={color} />,
         }}
       />
@@ -27,6 +28,7 @@ export default function TabLayout() {
         name="wishlists"
         options={{
           title: 'Wishlists',
+          headerShown: false, // Hide header for Wishlists screen
           tabBarIcon: ({ color }) => <Heart size={24} color={color} />,
         }}
       />
@@ -34,6 +36,7 @@ export default function TabLayout() {
         name="inbox"
         options={{
           title: 'Inbox',
+          headerShown: false, // Hide header for Inbox screen
           tabBarIcon: ({ color }) => <MessageCircle size={24} color={color} />,
         }}
       />
@@ -41,6 +44,7 @@ export default function TabLayout() {
         name="profile"
         options={{
           title: 'Profile',
+          headerShown: false, // Hide header for Profile screen
           tabBarIcon: ({ color }) => <User size={24} color={color} />,
         }}
       />

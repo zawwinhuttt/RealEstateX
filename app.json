@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "HomeShare Listing Platform",
+    "name": "Preperty One",
     "slug": "homeshare-listing-platform",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,14 +15,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "app.rork.homeshare-listing-platform"
+      "bundleIdentifier": "com.yourname.prepertyone"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.wizard560.homesharelistingplatform"
+      "package": "com.zaw.prepertyone"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
@@ -31,7 +31,7 @@
       [
         "expo-router",
         {
-          "origin": "https://rork.app/"
+          "origin": "https://myapp.app/"
         }
       ]
     ],
@@ -40,7 +40,7 @@
     },
     "extra": {
       "router": {
-        "origin": "https://rork.app/"
+        "origin": "https://myapp.app/"
       },
       "eas": {
         "projectId": "9e64ff36-5ada-4233-83c1-80d0f900c139"
